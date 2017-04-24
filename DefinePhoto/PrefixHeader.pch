@@ -12,8 +12,10 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 //导入第三方文件路径
-
+#import "KsystemDefine.h"
 #import "CustomDefine.h"
+#import "DefaultTextHead.h"
+
 #import "UIImage+Define.h"
 #import "UIImageView+WebCache.h"
 #import "VPImageCropperViewController.h"

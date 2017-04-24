@@ -41,7 +41,6 @@
 		8C5FCBA41EA9DC0A00E5521B /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FCBA31EA9DC0A00E5521B /* UIView+Extension.m */; };
 		8C5FCBA71EA9DC1600E5521B /* NetWorkHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FCBA61EA9DC1600E5521B /* NetWorkHttpRequest.m */; };
 		8C5FCBAF1EA9DC2700E5521B /* ZLCameraImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FCBAA1EA9DC2700E5521B /* ZLCameraImageView.m */; };
-		8C5FCBB01EA9DC2700E5521B /* ZLCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FCBAC1EA9DC2700E5521B /* ZLCameraView.m */; };
 		8C5FCBB11EA9DC2700E5521B /* ZLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FCBAE1EA9DC2700E5521B /* ZLCameraViewController.m */; };
 		8C5FCBB31EA9DC4C00E5521B /* paizhao.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5FCBB21EA9DC4C00E5521B /* paizhao.png */; };
 		8C5FCBB51EA9DC5400E5521B /* shanguangdeng.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5FCBB41EA9DC5400E5521B /* shanguangdeng.png */; };
@@ -91,7 +90,7 @@
 		8C5FCB431EA9D87100E5521B /* DefinePhotoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefinePhotoUITests.m; sourceTree = "<group>"; };
 		8C5FCB451EA9D87100E5521B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C5FCB511EA9D8B100E5521B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		8C5FCB531EA9DADF00E5521B /* CustomDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDefine.h; sourceTree = "<group>"; };
+		8C5FCB531EA9DADF00E5521B /* CustomDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomDefine.h; path = ../CustomDefine.h; sourceTree = "<group>"; };
 		8C5FCB581EA9DBD600E5521B /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		8C5FCB591EA9DBD600E5521B /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		8C5FCB5A1EA9DBD600E5521B /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -146,8 +145,6 @@
 		8C5FCBA61EA9DC1600E5521B /* NetWorkHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkHttpRequest.m; sourceTree = "<group>"; };
 		8C5FCBA91EA9DC2700E5521B /* ZLCameraImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCameraImageView.h; sourceTree = "<group>"; };
 		8C5FCBAA1EA9DC2700E5521B /* ZLCameraImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCameraImageView.m; sourceTree = "<group>"; };
-		8C5FCBAB1EA9DC2700E5521B /* ZLCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCameraView.h; sourceTree = "<group>"; };
-		8C5FCBAC1EA9DC2700E5521B /* ZLCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCameraView.m; sourceTree = "<group>"; };
 		8C5FCBAD1EA9DC2700E5521B /* ZLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCameraViewController.h; sourceTree = "<group>"; };
 		8C5FCBAE1EA9DC2700E5521B /* ZLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCameraViewController.m; sourceTree = "<group>"; };
 		8C5FCBB21EA9DC4C00E5521B /* paizhao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paizhao.png; sourceTree = "<group>"; };
@@ -164,6 +161,8 @@
 		8C5FCBCC1EA9DE8A00E5521B /* GetSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSystemInfo.m; sourceTree = "<group>"; };
 		8C5FCBCF1EA9EEA100E5521B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		8C5FCBD11EA9EEC000E5521B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8CADEFD21EADEAB70060E79A /* KsystemDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KsystemDefine.h; sourceTree = "<group>"; };
+		8CADEFD31EADEBF70060E79A /* DefaultTextHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultTextHead.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +239,6 @@
 		8C5FCB1E1EA9D87100E5521B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8C5FCB531EA9DADF00E5521B /* CustomDefine.h */,
 				8C5FCB511EA9D8B100E5521B /* PrefixHeader.pch */,
 				8C5FCB2A1EA9D87100E5521B /* Assets.xcassets */,
 				8C5FCB2C1EA9D87100E5521B /* LaunchScreen.storyboard */,
@@ -383,8 +381,6 @@
 			children = (
 				8C5FCBA91EA9DC2700E5521B /* ZLCameraImageView.h */,
 				8C5FCBAA1EA9DC2700E5521B /* ZLCameraImageView.m */,
-				8C5FCBAB1EA9DC2700E5521B /* ZLCameraView.h */,
-				8C5FCBAC1EA9DC2700E5521B /* ZLCameraView.m */,
 				8C5FCBAD1EA9DC2700E5521B /* ZLCameraViewController.h */,
 				8C5FCBAE1EA9DC2700E5521B /* ZLCameraViewController.m */,
 			);
@@ -396,6 +392,9 @@
 			children = (
 				8C5FCBC51EA9DE5100E5521B /* CapturePhotoVC.h */,
 				8C5FCBC61EA9DE5100E5521B /* CapturePhotoVC.m */,
+				8C5FCB531EA9DADF00E5521B /* CustomDefine.h */,
+				8CADEFD21EADEAB70060E79A /* KsystemDefine.h */,
+				8CADEFD31EADEBF70060E79A /* DefaultTextHead.h */,
 			);
 			path = "截取图片";
 			sourceTree = "<group>";
@@ -563,7 +562,6 @@
 				8C5FCB971EA9DBE000E5521B /* AFHTTPSessionManager.m in Sources */,
 				8C5FCB261EA9D87100E5521B /* ViewController.m in Sources */,
 				8C5FCBA71EA9DC1600E5521B /* NetWorkHttpRequest.m in Sources */,
-				8C5FCBB01EA9DC2700E5521B /* ZLCameraView.m in Sources */,
 				8C5FCB791EA9DBD600E5521B /* MKAnnotationView+WebCache.m in Sources */,
 				8C5FCBCA1EA9DE8300E5521B /* UIImage+Define.m in Sources */,
 				8C5FCB981EA9DBE000E5521B /* AFNetworkReachabilityManager.m in Sources */,

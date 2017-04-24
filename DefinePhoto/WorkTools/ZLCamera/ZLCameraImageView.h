@@ -1,10 +1,3 @@
-//
-//  BQImageView.h
-//  BQCommunity
-//
-//  Created by TJQ on 14-8-5.
-//  Copyright (c) 2014年 beiqing. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
@@ -33,5 +26,31 @@
  */
 @property (assign, nonatomic, getter = isEdit) BOOL edit;
 
+
+@end
+
+
+
+#pragma mark --- 导入拍照的Layer层
+
+@class ZLCameraView;
+
+@protocol ZLCameraViewDelegate <NSObject>
+
+@optional
+
+- (void) cameraDidSelected : (ZLCameraView *) camera;
+
+@end
+
+#define BQCameraViewW 60
+
+@interface ZLCameraView : UIView
+
+@property (weak, nonatomic) id <ZLCameraViewDelegate> delegate;
+@property (strong, nonatomic) CADisplayLink *link;
+@property (assign, nonatomic) NSInteger time;
+@property (assign, nonatomic) CGPoint point;
+@property (assign, nonatomic) BOOL isPlayerEnd;
 
 @end

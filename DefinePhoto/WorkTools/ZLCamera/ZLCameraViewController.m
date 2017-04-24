@@ -1,26 +1,15 @@
-//
-//  BQCamera.m
-//  BQCommunity
-//
-//  Created by ZL on 14-9-11.
-//  Copyright (c) 2014年 beiqing. All rights reserved.
-//
 
-#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-#define CAMERA_TRANSFORM_X 1.2
-#define CAMERA_TRANSFORM_Y 1.2
-#define BOTTOM_HEIGHT 60
 
 #import "ZLCameraViewController.h"
 #import "ZLCameraImageView.h"
-#import <AVFoundation/AVFoundation.h>
-#import <ImageIO/ImageIO.h>
-#import "ZLCameraView.h"
 #import "UIView+Extension.h"
 
 
-@interface ZLCameraViewController () <UIActionSheetDelegate,UICollectionViewDataSource,UICollectionViewDelegate,AVCaptureMetadataOutputObjectsDelegate,ZLCameraImageViewDelegate,ZLCameraViewDelegate>
 
+#define BOTTOM_HEIGHT               60
+
+@interface ZLCameraViewController () <UIActionSheetDelegate,UICollectionViewDataSource,UICollectionViewDelegate,AVCaptureMetadataOutputObjectsDelegate,ZLCameraImageViewDelegate,ZLCameraViewDelegate>
+//
 @property (weak, nonatomic) UIView *controlView;
 
 // 代码块
@@ -45,13 +34,7 @@
 @end
 
 @implementation ZLCameraViewController
-#pragma mark -- 隐藏时间栏 - 20
-//- (UIStatusBarStyle)preferredStatusBarStyle{
-//   // [[UIApplication sharedApplication] setStatusBarHidden:YES];
-//    return UIStatusBarStyleDefault;
-//}
-#pragma mark --隐藏导航栏 -- 44
-//[self.navigationController setNavigationBarHidden:YES animated:YES];
+
 
 - (NSMutableArray *)images{
     if (!_images) {
@@ -221,7 +204,7 @@
     //取消
     UIButton *cancalBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     cancalBtn.frame = CGRectMake(margin, 0, x, controlView.height);
-    [cancalBtn setTitle:@"取消" forState:UIControlStateNormal];
+    [cancalBtn setTitle:CommonCancel forState:UIControlStateNormal];
     [cancalBtn addTarget:self action:@selector(cancel:) forControlEvents:UIControlEventTouchUpInside];
     [controlView addSubview:cancalBtn];
     //拍照
@@ -235,7 +218,7 @@
     // 完成
     UIButton *doneBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     doneBtn.frame = CGRectMake(self.view.width - 2 * margin - width, 0, width, controlView.height);
-    [doneBtn setTitle:@"完成" forState:UIControlStateNormal];
+    [doneBtn setTitle:CommonConfirm forState:UIControlStateNormal];
     [doneBtn addTarget:self action:@selector(doneAction) forControlEvents:UIControlEventTouchUpInside];
     [controlView addSubview:doneBtn];
     

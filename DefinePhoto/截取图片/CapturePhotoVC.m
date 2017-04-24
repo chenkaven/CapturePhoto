@@ -60,7 +60,7 @@
     kWeakSelf(self);
     NSString *mediaType= [info objectForKey:UIImagePickerControllerMediaType];
     //判断资源类型
-       if ([mediaType isEqualToString:(NSString *)kUTTypeImage] && picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
+       if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
         //如果是图片
        UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
         //压缩图片

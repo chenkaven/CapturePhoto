@@ -1,16 +1,6 @@
-//
-//  VPImageCropperViewController.m
-//  VPolor
-//
-//  Created by Vinson.D.Warm on 12/30/13.
-//  Copyright (c) 2013 Huang Vinson. All rights reserved.
-//
 
 #import "AppDelegate.h"
 #import "VPImageCropperViewController.h"
-
-
-//#import "NSString+MyExtern.h"
 
 #define SCALE_FRAME_Y       100.0f
 #define BOUNDCE_DURATION    0.3f
@@ -20,8 +10,7 @@
 #define Common_Main_Color     HEXCOLOR(0xea322f)
 
 
-#define CommonCancel        @"取消"
-#define CommonConfirm       @"确定"
+
 
 @interface VPImageCropperViewController ()
 

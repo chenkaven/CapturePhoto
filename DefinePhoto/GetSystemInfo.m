@@ -65,7 +65,13 @@
 //    return [GetSystemInfo shareInstance] ;
 //}
 
-
+#pragma mark -- 隐藏时间栏 - 20
+//- (UIStatusBarStyle)preferredStatusBarStyle{
+//   // [[UIApplication sharedApplication] setStatusBarHidden:YES];
+//    return UIStatusBarStyleDefault;
+//}
+#pragma mark --隐藏导航栏 -- 44
+//[self.navigationController setNavigationBarHidden:YES animated:YES];
 
 //获取WiFi名称
 + (NSString *)getWifiName {
