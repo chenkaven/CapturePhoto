@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  DefinePhoto
+//
+//  Created by kaven on 2017/4/21.
+//  Copyright © 2017年 kaven. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+// 引入系统库
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//导入第三方文件路径
+
+#import "CustomDefine.h"
+#import "UIImage+Define.h"
+#import "UIImageView+WebCache.h"
+#import "VPImageCropperViewController.h"
+
+
+#endif
