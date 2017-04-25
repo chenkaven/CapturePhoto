@@ -11,4 +11,9 @@
 @property (nonatomic,assign) CGFloat height;
 @property (nonatomic,assign) CGSize size;
 
+@property CGFloat top;
+@property CGFloat left;
+
+@property CGFloat bottom;
+@property CGFloat right;
 @end

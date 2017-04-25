@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="172" id="KGk-i7-Jjw" customClass="ViewTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="171"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY2-Tv-VcG">
+                        <rect key="frame" x="10" y="74" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="2dt-PE-tgV"/>
+                            <constraint firstAttribute="width" secondItem="wY2-Tv-VcG" secondAttribute="height" multiplier="1:1" id="Chp-vi-hXG"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="btn_choose_normal"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCj-cJ-0rY">
+                        <rect key="frame" x="44" y="0.0" width="333" height="171.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RBY-co-cAk">
+                                <rect key="frame" x="10" y="36" width="80" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RBY-co-cAk" secondAttribute="height" multiplier="4:5" id="DyK-aV-RdD"/>
+                                    <constraint firstAttribute="width" constant="80" id="vDO-ls-aJ5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股神老师的直播间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opH-Rx-C8e">
+                                <rect key="frame" x="100" y="36" width="223" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日主题：今天大盘走势 充满悬念" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cml-DQ-jEs">
+                                <rect key="frame" x="100" y="65.5" width="223" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTr-Gc-lx9" userLabel="Bottomline">
+                                <rect key="frame" x="10" y="170" width="323" height="1"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZtR-Wf-G9Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RBY-co-cAk" firstAttribute="centerY" secondItem="DCj-cJ-0rY" secondAttribute="centerY" id="556-ah-Eer"/>
+                            <constraint firstItem="cml-DQ-jEs" firstAttribute="leading" secondItem="opH-Rx-C8e" secondAttribute="leading" id="GSN-eY-7WI"/>
+                            <constraint firstAttribute="trailing" secondItem="opH-Rx-C8e" secondAttribute="trailing" constant="10" id="Lho-db-W2i"/>
+                            <constraint firstItem="RBY-co-cAk" firstAttribute="leading" secondItem="DCj-cJ-0rY" secondAttribute="leading" constant="10" id="ZgU-zW-L4y"/>
+                            <constraint firstItem="cml-DQ-jEs" firstAttribute="top" secondItem="opH-Rx-C8e" secondAttribute="bottom" constant="10" id="dss-8A-Lhv"/>
+                            <constraint firstAttribute="trailing" secondItem="gTr-Gc-lx9" secondAttribute="trailing" id="eCM-8J-zHG"/>
+                            <constraint firstItem="opH-Rx-C8e" firstAttribute="top" secondItem="RBY-co-cAk" secondAttribute="top" id="p7e-hI-OaS"/>
+                            <constraint firstAttribute="bottom" secondItem="gTr-Gc-lx9" secondAttribute="bottom" id="sDy-ug-Nex"/>
+                            <constraint firstItem="opH-Rx-C8e" firstAttribute="leading" secondItem="RBY-co-cAk" secondAttribute="trailing" constant="10" id="tPi-l6-R8U"/>
+                            <constraint firstAttribute="trailing" secondItem="cml-DQ-jEs" secondAttribute="trailing" constant="10" id="vkY-tv-Hk3"/>
+                            <constraint firstItem="gTr-Gc-lx9" firstAttribute="leading" secondItem="DCj-cJ-0rY" secondAttribute="leading" constant="10" id="zGe-YI-Jn5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DCj-cJ-0rY" firstAttribute="leading" secondItem="wY2-Tv-VcG" secondAttribute="trailing" constant="10" id="6Z8-0B-IhC"/>
+                    <constraint firstItem="DCj-cJ-0rY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6m2-oI-9g7"/>
+                    <constraint firstItem="wY2-Tv-VcG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ERP-Nf-i3C"/>
+                    <constraint firstItem="wY2-Tv-VcG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tva-qI-nv8"/>
+                    <constraint firstAttribute="bottom" secondItem="DCj-cJ-0rY" secondAttribute="bottom" id="e5U-ZA-8WO"/>
+                    <constraint firstAttribute="trailing" secondItem="DCj-cJ-0rY" secondAttribute="trailing" id="rTJ-pi-0s7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseBtn" destination="wY2-Tv-VcG" id="AdX-bt-vmX"/>
+                <outlet property="detailTitleLab" destination="cml-DQ-jEs" id="opO-lJ-LKa"/>
+                <outlet property="photoView" destination="RBY-co-cAk" id="HCm-Yf-MRy"/>
+                <outlet property="titleLab" destination="opH-Rx-C8e" id="gEv-ok-bWx"/>
+            </connections>
+            <point key="canvasLocation" x="53.5" y="116"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Default1.jpg" width="960" height="960"/>
+        <image name="btn_choose_normal" width="19" height="19"/>
+    </resources>
+</document>
