@@ -75,6 +75,9 @@
 		8CCE201F1EAEF11E00692611 /* ViewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE201D1EAEF11E00692611 /* ViewTableCell.m */; };
 		8CCE20201EAEF11E00692611 /* ViewTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CCE201E1EAEF11E00692611 /* ViewTableCell.xib */; };
 		8CCE20231EAEFEA000692611 /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE20221EAEFEA000692611 /* TableModel.m */; };
+		F034DC3C1EF1F24D001B9660 /* KeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = F034DC3B1EF1F24D001B9660 /* KeyChain.m */; };
+		F0F574FB1EEA2197002A31DB /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F574FA1EEA2197002A31DB /* DBManager.m */; };
+		F0F574FD1EEA21E7002A31DB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F574FC1EEA21E7002A31DB /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +228,11 @@
 		8CCE201E1EAEF11E00692611 /* ViewTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewTableCell.xib; sourceTree = "<group>"; };
 		8CCE20211EAEFEA000692611 /* TableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
 		8CCE20221EAEFEA000692611 /* TableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
+		F034DC3A1EF1F24D001B9660 /* KeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChain.h; sourceTree = "<group>"; };
+		F034DC3B1EF1F24D001B9660 /* KeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChain.m; sourceTree = "<group>"; };
+		F0F574F91EEA2197002A31DB /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		F0F574FA1EEA2197002A31DB /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		F0F574FC1EEA21E7002A31DB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F574FD1EEA21E7002A31DB /* libsqlite3.tbd in Frameworks */,
 				8C5FCBD21EA9EEC000E5521B /* AssetsLibrary.framework in Frameworks */,
 				8C5FCBD01EA9EEA100E5521B /* Photos.framework in Frameworks */,
 			);
@@ -346,6 +355,8 @@
 		8C5FCB551EA9DBC500E5521B /* WorkTools */ = {
 			isa = PBXGroup;
 			children = (
+				F034DC391EF1F236001B9660 /* KeyChain */,
+				F0F574F81EEA2189002A31DB /* DBManager */,
 				8CADF02B1EAE043B0060E79A /* ZYQAssetPickerVC */,
 				8CADEFFE1EAE021B0060E79A /* TZImagePickerVC */,
 				8C5FCBA81EA9DC2700E5521B /* ZLCamera */,
@@ -468,6 +479,7 @@
 		8C5FCBCE1EA9EEA000E5521B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0F574FC1EEA21E7002A31DB /* libsqlite3.tbd */,
 				8C5FCBD11EA9EEC000E5521B /* AssetsLibrary.framework */,
 				8C5FCBCF1EA9EEA100E5521B /* Photos.framework */,
 			);
@@ -558,6 +570,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F034DC391EF1F236001B9660 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				F034DC3A1EF1F24D001B9660 /* KeyChain.h */,
+				F034DC3B1EF1F24D001B9660 /* KeyChain.m */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		F0F574F81EEA2189002A31DB /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				F0F574F91EEA2197002A31DB /* DBManager.h */,
+				F0F574FA1EEA2197002A31DB /* DBManager.m */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -625,7 +655,7 @@
 				TargetAttributes = {
 					8C5FCB1A1EA9D87100E5521B = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = KULKP7SBH2;
+						DevelopmentTeam = L5H9ER4XWM;
 						ProvisioningStyle = Automatic;
 					};
 					8C5FCB331EA9D87100E5521B = {
@@ -748,6 +778,7 @@
 				8CADF0241EAE021B0060E79A /* TZPhotoPreviewController.m in Sources */,
 				8C5FCB9A1EA9DBE000E5521B /* AFURLRequestSerialization.m in Sources */,
 				8CADF01B1EAE021B0060E79A /* TZAssetCell.m in Sources */,
+				F034DC3C1EF1F24D001B9660 /* KeyChain.m in Sources */,
 				8C5FCBCD1EA9DE8A00E5521B /* GetSystemInfo.m in Sources */,
 				8C5FCBA01EA9DBFE00E5521B /* VPImageCropperViewController.m in Sources */,
 				8CADF0221EAE021B0060E79A /* TZPhotoPickerController.m in Sources */,
@@ -755,6 +786,7 @@
 				8CCE20231EAEFEA000692611 /* TableModel.m in Sources */,
 				8C5FCB9B1EA9DBE000E5521B /* AFURLResponseSerialization.m in Sources */,
 				8C5FCB201EA9D87100E5521B /* main.m in Sources */,
+				F0F574FB1EEA2197002A31DB /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +881,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -890,7 +922,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -901,10 +933,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KULKP7SBH2;
+				DEVELOPMENT_TEAM = L5H9ER4XWM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DefinePhoto/PrefixHeader.pch";
 				INFOPLIST_FILE = DefinePhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DefinePhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -915,10 +948,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KULKP7SBH2;
+				DEVELOPMENT_TEAM = L5H9ER4XWM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DefinePhoto/PrefixHeader.pch";
 				INFOPLIST_FILE = DefinePhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DefinePhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";

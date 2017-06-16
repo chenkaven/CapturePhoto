@@ -38,7 +38,7 @@
 
 //一些缩写
 
-#define kApplication        [UIApplication sharedApplication]
+#define kApplication           [UIApplication sharedApplication]
 
 #define kKeyWindow          [UIApplication sharedApplication].keyWindow
 
@@ -71,7 +71,7 @@
 #define kRemoveObverNotic(notObserver,noticName)      [kNotificationCenter removeObserver:notObserver name:noticName object:nil]
 
 //xib文件读取
-#define kXIBFileWritieView(xibName,ownerType)         [[[NSBundle mainBundle]loadNibNamed:xibName owner:ownerType options:nil]lastObject]
+#define kXIBFileWritieView(xibName)         [[[NSBundle mainBundle]loadNibNamed:xibName owner:self options:nil]lastObject]
 
 
 
@@ -87,7 +87,7 @@
 
 //获取沙盒Cache路径
 
-#define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+#define kCachePath    [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
 
 

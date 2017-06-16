@@ -14,6 +14,8 @@
 #import "TZImagePickerController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <Photos/Photos.h>
+#import "GetSystemInfo.h"
+#import "KeyChain.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,TZImagePickerControllerDelegate>
 
@@ -41,12 +43,18 @@
     [weakself.tableview setRowHeight:120.0f];
     /*无下划线*/
     weakself.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
     [weakself pandunDataArr];
+    NSString  *textfiled1 = @"www.baidu.com";
+    NSString  *textfiled2 = @"www.qq.com";
+    //归档
+    [KeyChain archiverModel:textfiled1 modelKey:@"baidu"];
+    [KeyChain archiverModel:textfiled2 modelKey:@"qq"];
+   
+    
     
 }
 
--(void)pandunDataArr{
+;-(void)pandunDataArr{
     
     kWeakSelf(self);
     if ([weakself.dataArr count]<= 0) {
@@ -253,7 +261,10 @@
 }
 #pragma mark -- 开启编辑状态
 - (IBAction)editBtnAction:(UIButton *)sender {
-    
+    //解档
+    id obj1 =    [KeyChain unArchiverModelFileKey:@"baidu"];
+    id obj2 =    [KeyChain unArchiverModelFileKey:@"qq"];
+    NSLog(@"打印object1—%@,打印object2—%@",obj1,obj2);
     kWeakSelf(self);
     //每次选择完都要初始化
     [weakself select_Arr];
